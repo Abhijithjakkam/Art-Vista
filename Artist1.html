@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <nav class="navbar navbar-default">
+      <div class="">
+        <div class="navbar-header">
+          <a href="index.html">
+            <b>
+              <p class="navbar-brand card-title">ART VISTA</p>
+            </b>
+          </a>
+        </div>
+    </nav>
+    
+    <div class="row align-items-center ">
+        <div class="col-md-2"></div>
+        <div class="car image-card col-md-4">
+            <img class="testimonial-image container card-img-top" src="images/leonardo-da-vinci3.jpeg" alt="First slide">
+
+        </div>
+        <div class="col-md-4">
+          <h3 class="card-title">Leonardo da Vinci</h3>
+          <em>Leonardo da Vinci was an Italian polymath of the Renaissance period. Born in Vinci, Italy in 1452, he is renowned for his masterpieces like the Mona Lisa and The Last Supper. Da Vinci's artistic techniques, including sfumato and chiaroscuro, revolutionized the art world. Beyond his artistic prowess, he was also a scientist, engineer, mathematician, anatomist, and architect. His extensive knowledge and curiosity led him to make significant contributions in various fields, evident in his detailed studies of human anatomy and his designs for inventions. Da Vinci's notebooks are invaluable sources of his sketches, observations, and ideas, showcasing his intellectual prowess and his ability to bridge art and science. His impact on the world continues to inspire and influence artists, scientists, and inventors today.</em>
+        </div>
+      </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image-card mb-4">
+              <img src="images/leo.jpg" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Mona Lisa</h5>
+                <em class="card-text">The Mona Lisa is a world-renowned portrait painted by Leonardo da Vinci during the Renaissance period. It is celebrated for its enigmatic smile and its mastery in capturing the human form.</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal1">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="image-card mb-4">
+              <img src="images/leo2.jpg" class="card-img-top img-fluid" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">The Virgin of the Rocks</h5>
+                
+                <em class="card-text">"The Virgin of the Rocks" is a famous painting by Leonardo da Vinci. There are two versions of this painting, one housed at the Louvre Museum in Paris and the other at the National Gallery in London.</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal2">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+         
+  <!-- Modal 1 -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal1Label">Mona Lisa</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/leo.jpg" class="img-fluid" alt="Image 1">
+          <em class="mt-3">The Mona Lisa is a world-renowned portrait painted by Leonardo da Vinci during the Renaissance period. It is celebrated for its enigmatic smile and its mastery in capturing the human form, Mona Lisa is highly regarded for its impeccable composition, use of perspective, and the delicate play of light and shadow, which showcases Leonardo da Vinci's extraordinary skill as a painter.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal2Label">The Virgin of the Rocks</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/leo2.jpg" class="img-fluid" alt="Image 2">
+          <em class="mt-3">"The Virgin of the Rocks" is a famous painting by Leonardo da Vinci. There are two versions of this painting, one housed at the Louvre Museum in Paris and the other at the National Gallery in London. The first version, created between 1483 and 1486, depicts the Virgin Mary, the infant Jesus, and the young John the Baptist in a rocky landscape. The painting showcases da Vinci's mastery of chiaroscuro and his meticulous attention to detail. The figures are beautifully rendered, with soft and delicate features, and the landscape is intricately layered with rocks, plants, and a mysterious grotto. "The Virgin of the Rocks" is a testament to da Vinci's artistic genius and his ability to capture a sense of spirituality and beauty in his works.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    background-image: linear-gradient(to right, #6b3fa0, #ff70a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-img-top {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-img-top {
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .card {
+    height: 320px;
+  }
+  .card-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+  }
+
+  .card-title2{
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+  }
+
+  body {
+    padding: 20px;
+    margin: 0;
+      padding: 0;
+  }
+ h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+ }
+ p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+ }
+ .features-list li {
+    margin-bottom: 10px;
+ }
+
+ #footer{
+    text-align: center;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.tail{
+    margin: auto 1%;
+    padding-top: 30px;
+    color: #000;
+}
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    animation: backgroundAnimation 2s ease-in-out forwards;
+  }
+  
+  /* CSS keyframes for animation */
+  @keyframes backgroundAnimation {
+    0% {
+      background-color: transparent; /* Start color */
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%); /* Clip from left edge */
+    }
+    25% {
+      background-image: url("patterns/paisley.png");
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Clip from top edge */
+    }
+    50% {
+      /* background: linear-gradient(#00a2ff, #dd7698);  */
+      background-color: #fff; 
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Clip from top edge */
+    }
+    75% {
+      background-color: #ffff00; /* Color change at 75% of animation */
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); /* Clip from bottom edge */
+    }
+    100% {
+      /* background: linear-gradient(#fff);  */
+      background-image: url("patterns/paisley.png");
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  /* Clip from right edge */
+    }
+  }
+
+ 
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+    filter: blur(3px); /* Adjust the blur value as needed */
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+  }
+
+  .social-icon {
+    font-size: 30px;
+    margin: 0 5px;
+  }
+
+  .genre{
+    background-color: #fff;
+  }
+  .carousel-control-prev.carousel-control-prev {
+    color: red !important;
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <nav class="navbar navbar-default">
+      <div class="">
+        <div class="navbar-header">
+          <a href="index.html">
+            <b>
+              <p class="navbar-brand card-title">ART VISTA</p>
+            </b>
+          </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image-card mb-4">
+              <img src="images/leo.jpg" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Mona Lisa</h5>
+                <a href="Artist1.html">
+                    <h5 class="card-title">Artist : Leonardo da Vinci</h5>
+                </a>
+                
+                <em class="card-text">The Mona Lisa is a world-renowned portrait painted by Leonardo da Vinci during the Renaissance period. It is celebrated for its enigmatic smile and its mastery in capturing the human form.</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal1">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="image-card mb-4">
+              <img src="images/vin.png" class="card-img-top img-fluid" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">The Starry Night</h5>
+                <a href="Artist3.html">
+                    <h5 class="card-title">Artist : Vincent van Gogh</h5>
+                </a>
+                <em class="card-text">The Starry Night" is an iconic masterpiece created by Vincent van Gogh in 1889 during his asylum stay in France.</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal2">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+         
+  <!-- Modal 1 -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal1Label">Mona Lisa</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/leo.jpg" class="img-fluid" alt="Image 1">
+          <em class="mt-3">The Mona Lisa is a world-renowned portrait painted by Leonardo da Vinci during the Renaissance period. It is celebrated for its enigmatic smile and its mastery in capturing the human form, Mona Lisa is highly regarded for its impeccable composition, use of perspective, and the delicate play of light and shadow, which showcases Leonardo da Vinci's extraordinary skill as a painter.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal2Label">The Starry Night</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/vin.png" class="img-fluid" alt="Image 2">
+          <em class="mt-3">The Starry Night" is an iconic masterpiece created by Vincent van Gogh in 1889 during his asylum stay in France. The painting is characterized by expressive brushwork, showcasing swirling, thick strokes that convey a sense of movement and vitality in the night sky. Van Gogh's vivid color palette, with deep blues, vibrant yellows, and celestial whites, creates a mesmerizing and emotional impact on the viewer. Symbolic elements, such as the cypress tree and the crescent moon, add layers of meaning, representing themes of death, spirituality, and the passage of time. Through this painting, van Gogh expresses his inner turmoil, reflecting his struggles with mental health. Despite its deeply personal nature, "The Starry Night" has gained global recognition and remains a revered symbol of art history, mesmerizing viewers with its profound beauty and evoking a sense of wonder and fascination.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

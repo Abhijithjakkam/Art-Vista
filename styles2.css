@@ -1,0 +1,100 @@
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    animation: backgroundAnimation 2s ease-in-out forwards;
+  }
+
+  .card {
+    height: 320px;
+  }
+  .card-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+  }
+
+  .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* CSS keyframes for animation */
+  @keyframes backgroundAnimation {
+    0% {
+      background-color: transparent; /* Start color */
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%); /* Clip from left edge */
+    }
+    25% {
+      /* background-color: #00a2ff;  */
+      background-image: url("patterns/paisley.png");
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Clip from top edge */
+    }
+    50% {
+      /* background: linear-gradient(#00a2ff, #dd7698);  */
+      background-color: #fff; 
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Clip from top edge */
+    }
+    75% {
+      background-color: #ffff00; /* Color change at 75% of animation */
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); /* Clip from bottom edge */
+    }
+    100% {
+      /* background: linear-gradient(#fff);  */
+      background-image: url("patterns/paisley.png");
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  /* Clip from right edge */
+    }
+  }
+
+  .image-container {
+    position: relative;
+    height: 400px;
+    width: 600px;
+}
+
+.falling-image {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fallingAnimation 2s forwards;
+}
+.image-card img {
+  animation: fallingAnimation 1s ease-in-out forwards;
+ height : 30rem;
+ width: 20rem;
+}
+
+.image-car img {
+  animation: fallingAnimation 1s ease-in-out forwards;
+
+}
+
+@keyframes fallingAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container{
+  padding-top: 7%;
+}
+
+.card-img-top {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.img:hover .card-img-top{
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <nav class="navbar navbar-default">
+      <div class="">
+        <div class="navbar-header">
+          <a href="index.html">
+            <b>
+              <p class="navbar-brand card-title">ART VISTA</p>
+            </b>
+          </a>
+        </div>
+    </nav>
+    
+    <div class="row align-items-center ">
+        <div class="col-md-2"></div>
+        <div class="car image-card col-md-4">
+            <img class="testimonial-image container card-img-top" src="images/vincent.jpeg" alt="First slide">
+
+        </div>
+        <div class="col-md-4">
+          <h3 class="card-title">Vincent van Gogh</h3>
+          <em>Vincent van Gogh was a Dutch post-impressionist painter known for his bold and vibrant artworks. Despite struggling with mental health issues, he created over 2,000 paintings in just a decade. His unique style, characterized by intense colors and expressive brushwork, conveyed his emotional state. Despite little recognition during his lifetime, van Gogh's posthumous fame soared, and he is now celebrated as one of the greatest artists of all time. His iconic works, such as "The Starry Night" and "Sunflowers," continue to inspire and captivate audiences worldwide.His personal struggles and tragic end serve as a poignant reminder of the power and impact of artistic expression.</em>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image-car mb-4">
+              <img src="images/vin.png" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">The Starry Night</h5>
+                <em class="card-text">The Starry Night" is an iconic masterpiece created by Vincent van Gogh in 1889 during his asylum stay in France.</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal1">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="image-car mb-4">
+              <img src="images/vin2.png" class="card-img-top img-fluid" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">The World-Changing Trees</h5>
+                <em class="card-text">"The World-Changing Trees," van Gogh captures the awe-inspiring beauty and significance of trees in the world.</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal2">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+         
+  <!-- Modal 1 -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal1Label">The Starry Night</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/vin.png" class="img-fluid" alt="Image 1">
+          <em class="mt-3">The Starry Night" is an iconic masterpiece created by Vincent van Gogh in 1889 during his asylum stay in France. The painting is characterized by expressive brushwork, showcasing swirling, thick strokes that convey a sense of movement and vitality in the night sky. Van Gogh's vivid color palette, with deep blues, vibrant yellows, and celestial whites, creates a mesmerizing and emotional impact on the viewer. Symbolic elements, such as the cypress tree and the crescent moon, add layers of meaning, representing themes of death, spirituality, and the passage of time. Through this painting, van Gogh expresses his inner turmoil, reflecting his struggles with mental health. Despite its deeply personal nature, "The Starry Night" has gained global recognition and remains a revered symbol of art history, mesmerizing viewers with its profound beauty and evoking a sense of wonder and fascination.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal2Label">The World-Changing Trees</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/vin2.png" class="img-fluid" alt="Image 2">
+          <em class="mt-3">Vincent van Gogh, known for his vibrant and expressive paintings, also had a deep appreciation for nature. In one of his lesser-known works, "The World-Changing Trees," van Gogh captures the awe-inspiring beauty and significance of trees in the world. Through his unique brushstrokes and use of vivid colors, he portrays the trees as powerful and transformative forces in the natural landscape. This painting serves as a testament to van Gogh's ability to convey the profound impact that nature can have on our lives and the world around us.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

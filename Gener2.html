@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <nav class="navbar navbar-default">
+      <div class="">
+        <div class="navbar-header">
+          <a href="index.html">
+            <b>
+              <p class="navbar-brand card-title">ART VISTA</p>
+            </b>
+          </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class=" mb-4">
+              <img src="images/cla.png" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">water lilies</h5>
+                <a href="Artist2.html">
+                    <h5 class="card-title">Artist : Claude Monet</h5>
+                </a>
+                
+                <em class="card-text">Water Lilies, discussed by Claude Monet, is a renowned series of approximately 250 oil paintings that capture the ethereal beauty of his water garden in Giverny.</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal1">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-4">
+              <img src="images/cal2.jpg" class="card-img-top img-fluid" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">Ordrupgaard</h5>
+                <a href="Artist2.html">
+                    <h5 class="card-title">Artist : Claude Monet</h5>
+                </a>
+                <em class="card-text">Ordrupgaard is an exquisite painting created by Claude Monet in 1905 during his visit to Denmark. This artwork is part of a series known as "The Ordrupgaard Collection".</em>
+                <a href="#" data-toggle="modal" data-target="#imageModal2">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+         
+  <!-- Modal 1 -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal1Label">water lilies</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/cla.png" class="img-fluid" alt="Image 1">
+          <em class="mt-3">Water Lilies, discussed by Claude Monet, is a renowned series of approximately 250 oil paintings that capture the ethereal beauty of his water garden in Giverny. Created between 1890 and 1926, these impressionistic artworks showcase Monet's mastery of capturing the play of light, reflections, and the ever-shifting surface of water. With his loose brushstrokes and vibrant color palette, Monet transported viewers to a tranquil and immersive world, inviting them to experience the serenity and harmony of nature. The Water Lilies series represents a breakthrough in artistic technique and a profound exploration of the relationship between art, emotion, and the natural world.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title card-title" id="imageModal2Label">Ordrupgaard</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/cal2.jpg" class="img-fluid" alt="Image 2">
+          <em class="mt-3">Ordrupgaard is an exquisite painting created by Claude Monet in 1905 during his visit to Denmark. This artwork is part of a series known as "The Ordrupgaard Collection," which Monet painted during his stay at Ordrupgaard, a beautiful country estate. Known for his Impressionist style, Monet skillfully captures the play of light and color in this landscape painting. The lush greenery, vibrant flowers, and serene waters of the garden are brought to life with loose brushwork and a harmonious color palette. The painting showcases Monet's ability to depict the ever-changing and ephemeral nature of light. Ordrupgaard is not only a testament to Monet's artistic genius but also provides a glimpse into the tranquil beauty of Danish landscapes.</em>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
